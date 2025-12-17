@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sophie Patch | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="desktop-nav">
+  <div class="logo">Sophie Patch</div>
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="hamburger-nav">
+  <div class="logo">Sophie Patch</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
+
+<!-- PROFILE SECTION -->
+<section id="profile">
+  <div class="section__pic-container">
+    <img src="./assets/profile-pic.png" alt="Profile picture of Sophie Patch" />
+  </div>
+  <div class="section__text">
+    <p class="section__text__p1">Hello, I'm</p>
+    <h1 class="title">Sophie Patch</h1>
+    <p class="section__text__p2">UX & Product Design</p>
+    <div class="btn-container">
+      <button class="btn btn-color-2"
+        onclick="window.open('./assets/Sophie_Patch_Resume.pdf', '_blank')">
+        Download CV
+      </button>
+      <button class="btn btn-color-1" onclick="location.href='#contact'">
+        Contact Info
+      </button>
+    </div>
+    <div id="socials-container">
+      <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon"
+        onclick="window.open('https://www.linkedin.com/in/sophie-patch-816b3a220/', '_blank')" />
+      <img src="./assets/github.png" alt="Github profile" class="icon"
+        onclick="window.open('https://github.com/SophiePatch', '_blank')" />
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section-container">
+    <div class="section__pic-container">
+      <img src="./assets/about-pic.png" alt="About picture" class="about-pic" />
+    </div>
+
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+          <h3>Experience</h3>
+          <p>Digital Experience • UX Research • Visual Design</p>
+        </div>
+
+        <div class="details-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>B.S. Media Arts & Design<br>James Madison University</p>
+        </div>
+      </div>
+
+      <div class="text-container">
+        <p>
+          I’m a Interactive Design student passionate about
+          improving how people interact with digital tools. My work spans UX research,
+          user interviews, prototyping, visual design, and digital accessibility.
+          I enjoy transforming insights into intuitive, meaningful user experiences.
+          I’ve gained hands-on experience through roles in research, design, teaching,
+          and digital marketing—each strengthening my creativity, collaboration,
+          and problem-solving skills.
+        </p>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#experience'" />
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Digital Experience & UX</h2>
+        <div class="article-container">
+
+          <article>
+            <img src="./assets/checkmark.png" alt="" class="icon" />
+            <div>
+              <h3>Figma</h3>
+              <p>Prototyping & Wireframes</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="" class="icon" />
+            <div>
+              <h3>User Research</h3>
+              <p>Interviews & Usability Testing</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="" class="icon" />
+            <div>
+              <h3>Adobe Creative Suite</h3>
+              <p>Photoshop, Illustrator, InDesign</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="" class="icon" />
+            <div>
+              <h3>HTML/CSS</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Technical Skills</h2>
+        <div class="article-container">
+
+          <article>
+            <img src="./assets/checkmark.png" alt="" class="icon" />
+            <div>
+              <h3>Python</h3>
+              <p>Basic (NumPy, Matplotlib)</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="" class="icon" />
+            <div>
+              <h3>Team Tools</h3>
+              <p>Slack, Notion, Zoom</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="./assets/checkmark.png" alt="" class="icon" />
+            <div>
+              <h3>Content & Digital Marketing</h3>
+              <p>Branding & Social Media</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#projects'" />
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Sights of Sophie</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://sophiepatch.github.io/sightsofsophie/', '_blank')">
+            View
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Wild Finch Cidery</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://sophiepatch.github.io/wildfinchcidery/', '_blank')">
+            View
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Toothless Resume</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="window.open('https://sophiepatch.github.io/toothlessresume/', '_blank')">
+            View
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#contact'" />
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <p class="section__text__p1">Get In Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+
+    <div class="contact-info-container">
+      <img src="./assets/email.png" alt="Email icon" class="icon contact-icon" />
+      <p>
+        <a href="mailto:sophiepatch@hotmail.com"
+           target="_blank" rel="noopener noreferrer">
+          sophiepatch@hotmail.com
+        </a>
+      </p>
+    </div>
+
+    <div class="contact-info-container">
+      <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+      <p>
+        <a href="https://www.linkedin.com/in/sophie-patch-816b3a220/"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>© 2025 Sophie Patch. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
